@@ -13,6 +13,7 @@ export function App() {
      
       <div className={styles.wrapper}>
         <Sidebar/>
+       
         <main>
         <Post author="Gabriel Alves"
         content="lorem ipsum dolor sit amet consectetur adipisicing elit "

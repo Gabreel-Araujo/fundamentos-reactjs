@@ -1,3 +1,4 @@
+import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 import styles from './Post.module.css'
 export function Post(){
@@ -6,14 +7,14 @@ export function Post(){
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src="https://github.com/Gabreel-alves.png" alt="" />
+                    <Avatar hasBorder src="https://github.com/Gabreel-alves.png" alt="" />
                     <div className={styles.authorInfo}>
                         <strong>Gabriel Alves</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
 
-            <time title='11 de maio às 8:45' dateTime='2022-05-11 08:45:25'>Publicado </time>
+            <time title='11 de maio às 8:45' dateTime='2022-05-11 08:45:25'>Publicado há 1hr </time>
 
             </header>
             <div className={styles.content}>
@@ -36,6 +37,8 @@ export function Post(){
         </form>
         <div className={styles.commentList}>
             <Comment/>
+           
+            
            
         </div>
         </article>
